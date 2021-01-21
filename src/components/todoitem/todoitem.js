@@ -7,11 +7,24 @@ const Todolistitem =()=>
     const [items, setItems] = useState('Список задач пуст')
     const addItem =()=>
     {
+        const setInputValue = () =>
+            {
+                let inputValue = document.querySelector('.input').value
+                data.push(inputValue)
+                setItems(
+                    <div>{data}</div>
+                )
+            } 
+            
         setItems(<div>
                 <Input placeholder={'Введите вашу задачу'}/>
-                <Button name={'Добавить задачу'} />
+                <Button name={'Добавить задачу'} onClick = {setInputValue}/>
                 </div>
             )
+            
+
+            
+            
 
             
     }
