@@ -9,3 +9,5 @@ const Button =({onClick,name}) =>
         </div>
     )
 }
+
+export default Button
