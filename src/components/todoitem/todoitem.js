@@ -7,19 +7,20 @@ const Todolistitem =()=>
     const [items, setItems] = useState('Список задач пуст')
     const addItem =()=>
     {
-        setItems(
-            <div>
-            <Input placeholder={'Введите вашу задачу'}/>
-            <Button name={'Добавить задачу'} onClick={} />
-            </div>
+        setItems(<div>
+                <Input placeholder={'Введите вашу задачу'}/>
+                <Button name={'Добавить задачу'} />
+                </div>
             )
-            
+
             
     }
 
     return(
         <div>
             {data}
+            {items}
+            <Button name={'Создать задачу'} onClick={addItem}/>
         </div>
     )
 }
