@@ -13,10 +13,8 @@ const Todolist =()=>
     }
     const pushInputValue = () =>
     {
-        console.log(itemsArr)
         itemsArr.push(getInputValue())
-        getInputValue()
-        return itemsArr
+        console.log(itemsArr)
     }
     const addInput = () => 
     {
